@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrenörlük ve Diyetisyenlik - Yeni Dönem Felsefesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 5px solid #3b3b3b;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #002244;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #66ff66;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .showcase {
+            background: url('stoic_art.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .showcase::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .showcase-content {
+            position: relative;
+            z-index: 1;
+        }
+        .showcase h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .btn-primary {
+            text-decoration: none;
+            background: #66cc66;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #559955;
+        }
+        .philosophy-section {
+            padding: 60px 0;
+            background-color: #fafafa;
+        }
+        .philosophy-section h2 {
+            text-align: center;
+            font-size: 3em;
+            color: #1a1a1a;
+        }
+        .philosophy-section p {
+            font-size: 1.5em;
+            margin: 20px auto;
+            max-width: 900px;
+            color: #2a2a2a;
+        }
+        .services-section {
+            background: #003366;
+            color: #ffffff;
+            padding: 60px 0;
+        }
+        .services-section h2 {
+            text-align: center;
+            font-size: 3em;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            padding: 20px;
+        }
+        .service-box {
+            background: #ffffff;
+            color: #1a1a1a;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .service-box i {
+            font-size: 3em;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 5px solid #3b3b3b;
+            position: relative;
+        }
+        footer .social-icons {
+            margin-top: 15px;
+        }
+        footer .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        footer .social-icons a:hover {
+            color: #66ff66;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Yeni Dönem - Antrenörlük ve Diyetisyenlik
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Hakkımda</a></li>
+            <li><a href="#">Hizmetler</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">İletışim</a></li>
+        </ul>
+    </nav>
+
+    <div class="showcase">
+        <div class="showcase-content">
+            <h1>Sağlığa ve Dengeye Yeni Bir Bakış</h1>
+            <a href="#" class="btn-primary">Hizmetlerimize Göz Atın</a>
+        </div>
+    </div>
+
+    <section class="philosophy-section">
+        <div class="container">
+            <h2>Stoik Felsefe ile Sağlık ve Güç</h2>
+            <p>Modern hayatın karmaşası içinde, klasik Stoik felsefeden ilham alarak denge ve huzur bulabilirsiniz. Felsefemiz, fiziksel ve zihinsel sağlığı birleştirirken, sadece bedenimizi değil zihnimizi de geliştirmeyi amaçlar. Bu, yalnızca kuvvetli olmanızı değil, aynı zamanda dengeli ve dirençli olmanızı sağlar.</p>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2>Hizmetlerimiz</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Kışisel Antrenman</h3>
+                    <p>Her bireye uygun, özelleştirilmiş antrenman programları ile sağlıklı ve güçlü bir bedene ulaşın.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Beslenme Danışmanlığı</h3>
+                    <p>Sağlıklı beslenme alışkanlıkları kazanarak hem vücudunuzu hem de zihninizi besleyin.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-spa"></i>
+                    <h3>Zihinsel Denge</h3>
+                    <p>Stoik felsefeden ilham alarak zihinsel denge ve huzur bulmanıza yardımcı oluyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Antrenörlük ve Diyetisyenlik - Stoik Felsefe ile Güçlenin
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
